@@ -2,13 +2,11 @@
 library(dplyr)
 
 ## Download zip file into working directory and unzip
-
 data_url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(data_url, "SamsungDataSet.zip", method = "curl")
 unzip("SamsungDataSet.zip")
 
 ## Load data to data frames
-
 x_test_data <- read.table(file.path(getwd(), "UCI HAR Dataset/test/X_test.txt"))
 y_test_data <- read.table(file.path(getwd(), "UCI HAR Dataset/test/Y_test.txt"))
 x_train_data <- read.table(file.path(getwd(), "UCI HAR Dataset/train/X_train.txt"))
@@ -22,10 +20,11 @@ activity_labels <- read.table(file.path(getwd(), "UCI HAR Dataset/activity_label
 names(x_test_data) <- features[,2]
 names(x_train_data) <- features[,2]
 
-## Apply label names to subject & y data
+## Apply label names to subject data
 names(subject_test) <- c("Subject_ID")
 names(subject_train) <- c("Subject_ID")
 
+## Apply label names to y data
 names(y_test_data) <- c("Activity_ID")
 names(y_train_data) <- c("Activity_ID")
 
