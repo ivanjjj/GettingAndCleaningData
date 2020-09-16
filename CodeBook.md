@@ -4,7 +4,7 @@
 1. "Subject_ID" - (1-30) unique idenfifier for each subject who particpated in the study
 2. "Activity_ID" - (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) one of six activities perfomed by the subjects while wearing smartphone on waist
 
-### Variables 3-68 contain the average of each measurement based on teh different variables
+### Variables 3-68 contain the average of each measurement based on the different variables
 
 3. "Time_Domain_BodyAcc_Mean_X_Axis" - Mean of mean of Body Acceleration on X axis for each Activity_ID & Subject_ID combination measured by Time Domain
 4. "Time_Domain_BodyAcc_Mean_Y_Axis" - Mean of mean of Body Acceleration on Y axis for each Activity_ID & Subject_ID combination measured by Time Domain
