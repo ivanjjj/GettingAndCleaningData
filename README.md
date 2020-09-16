@@ -1,4 +1,4 @@
-# GettingAndCleaningData
+# GettingAndCleaningData Readme
 
 ## This repository contains the following files:
 - run_analysis.R (contains script (see below) that gathers and organises data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
